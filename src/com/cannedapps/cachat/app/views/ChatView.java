@@ -2,7 +2,6 @@ package com.cannedapps.cachat.app.views;
 
 import roboguice.activity.RoboActivity;
 import roboguice.inject.InjectView;
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
