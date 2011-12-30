@@ -3,7 +3,7 @@ package com.cannedapps.cachat.app.presenters;
 import com.cannedapps.cachat.app.views.interfaces.IChatView;
 
 public class ChatPresenter {
-  
+
   private IChatView chatView;
 
   public ChatPresenter(IChatView chatView) {
@@ -11,9 +11,7 @@ public class ChatPresenter {
   }
 
   public void addMessage(String message) {
-    chatView.addMessage(message);
+    message = message + "\n";
+    chatView.appendNewMessage(message);
   }
-  
-  
-  
 }

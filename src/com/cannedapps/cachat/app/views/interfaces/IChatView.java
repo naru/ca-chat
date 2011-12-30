@@ -1,7 +1,11 @@
 package com.cannedapps.cachat.app.views.interfaces;
 
 public interface IChatView {
-  public void addMessage(String message);
-  
-  public String getLastMessage();
+  /**
+   * adds new message to chat
+   * 
+   * @param message
+   */
+  public void appendNewMessage(String message);
+
 }
