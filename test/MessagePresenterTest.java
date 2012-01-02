@@ -19,6 +19,6 @@ public class MessagePresenterTest {
     
     presenter.addMessage("hello");  // << This is the method we want to test
     
-    assertThat("hello", equalTo(view.getLastMessage()));
+    assertThat(view.lastMessage, equalTo("hello\n"));
   }
 }
