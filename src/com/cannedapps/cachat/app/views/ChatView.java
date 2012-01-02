@@ -2,7 +2,7 @@ package com.cannedapps.cachat.app.views;
 
 import roboguice.activity.RoboActivity;
 import roboguice.inject.InjectView;
-import android.app.Activity;
+import roboguice.util.Ln;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -35,6 +35,8 @@ public class ChatView extends RoboActivity implements IChatView, OnClickListener
   @Override
   public void appendNewMessage(String message) {
     chatText.append(message);
+    Ln.d("appending message " + message);
+
   }
 
   @Override
